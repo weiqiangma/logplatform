@@ -22,4 +22,8 @@ public class LogRecordExpressionEvaluator extends CachedExpressionEvaluator{
         Expression expression = expressionCache.get(methodKey);
         return null;
     }
+
+    public org.springframework.expression.EvaluationContext createEvaluationContext(Method method, Object[] args, Class<?> targetClass){
+        return null;
+    }
 }
